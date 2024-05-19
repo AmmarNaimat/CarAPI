@@ -1,8 +1,13 @@
-﻿namespace CarAPI.Data
+﻿using CsvHelper.Configuration.Attributes;
+
+namespace CarAPI.Data
 {
     public class CarMake
     {
-        public string make_name { get; set; }
-        public int make_id { get; set; }
+        [Name("make_name")]
+        public string Make { get; set; }
+
+        [Name("make_id")]
+        public int Id { get; set; }
     }
 }
